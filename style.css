@@ -1,0 +1,137 @@
+/* FONTS */
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+/* COLORS */
+
+.bg-pale-b {
+  background-color: hsl(225, 100%, 94%);
+}
+
+.bg-bright-blue {
+  background-color: hsl(245, 75%, 52%);
+}
+
+.color-bright-blue {
+  color: hsl(245, 75%, 52%);
+}
+
+.bg-very-pale-blue {
+  background-color: hsl(225, 100%, 98%);
+}
+
+.color-deaturated-blue {
+  color: hsl(224, 23%, 55%);
+}
+
+.color-dark-blue {
+  color: hsl(223, 47%, 23%);
+}
+
+/* RESETS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+body {
+  background: hsl(225, 100%, 94%);
+  font-family: "Red Hat Display", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* MOBILE STYLES */
+.container {
+  width: 375px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card-img img {
+  width: 100%;
+}
+
+.main {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.card-text {
+  width: 95%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.card-text p {
+  line-height: 1.5rem;
+  margin: 1rem 0rem;
+}
+
+.price-tag {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.price {
+  margin: 0rem 3rem 0rem 1rem;
+}
+
+.change-link {
+  font-weight: 900;
+  font-size: 0.8rem;
+  &:hover {
+    text-decoration: none;
+    color: hsla(245, 75%, 52%, 0.8);
+  }
+}
+
+.btn {
+  padding: 1rem;
+  width: 100%;
+  color: white;
+  border-radius: 0.5rem;
+  border: 1px solid hsl(245, 75%, 52%);
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin: 1.5rem auto;
+  &:hover {
+    background-color: hsla(245, 75%, 52%, 0.8);
+  }
+}
+
+.cancel-link {
+  font-weight: 900;
+  text-decoration: none;
+  &:hover {
+    color: hsl(223, 47%, 23%);
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+/* DESKTOP STYLE */
+
+@media screen and (min-width: 1300px) {
+  body {
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+  }
+}
